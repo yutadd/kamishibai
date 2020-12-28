@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <windows.h>
-#include <\Users\spyk4\source\repos\ConsoleApplication7\resource.h>
 #include <vector>
 #include <opencv2/opencv.hpp>
 #include <opencv2/core.hpp>
