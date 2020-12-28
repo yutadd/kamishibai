@@ -4,18 +4,12 @@
 #include <iostream>
 #include <windows.h>
 #include <vector>
-#include <opencv2/opencv.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include "opencv2/imgproc/imgproc_c.h"
 #include <filesystem>
-using namespace cv;
-	int kazu = 0;
-cv::VideoCapture video;
+int kazu;
 HBITMAP *bms;
 static std::vector<HBITMAP> tmp = std::vector<HBITMAP>();
-std::filesystem::path path2 = "c:\\images\\k";
-std::filesystem::path path = "c:\\images";
+std::filesystem::path path2 = "images\\k";
+std::filesystem::path path = "images";
 void load_img() {
 	kazu = 0;
 	for (const auto& file : std::filesystem::recursive_directory_iterator(path)) {
